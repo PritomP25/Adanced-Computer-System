@@ -88,18 +88,34 @@ Demonstrates the trade-off between read/write latency and throughput of main mem
 ### Uses: 
 Open a command terminal in a directory containing the project files, and use the commands below to compile and run the code.  
 ```
-memory_latency.c
+memory_queue_tradeoff.c
 ```
 
 Compile line:
 ```
-gcc -o memory_latency memory_latency.c -lrt
+gcc -o memory_queue_tradeoff memory_queue_tradeoff.c -pthread -lrt
 ```
-This will complie your file using gcc. The purpose of having the flag "-lrt" is used to link the real-time library for clock_gettime.
+This will complie your file using gcc. The purpose of having the flag "-lrt" is used to link the real-time library for clock_gettime. The purpose of "-pthread" is used to link the pthread library for multithreading.  
 
 Execute line:
 ```
-./memory_latency
+./memory_queue_tradeoff
 ```
 
 ### How the Script Works:
+The script uses multiple threads to simulate memory accesses with varying queue depths (1, 2, 4, 8, 16, and 32).  
+The metrics measured are the latency (avg time taken per memory access) and the Throughout (total data transferred per second).  
+For how the operations is being preformed, both read and write operations were tested over multiple runs.
+
+Here are the results after I've run the code  
+![alt text](https://cdn.discordapp.com/attachments/1019778992779309097/1288696501068894239/image.png?ex=66f61fa4&is=66f4ce24&hm=6638d8a0ab904571128bc528acf93ce8346855a32684049e3cefd29726770533&) 
+
+### Analysis:
+Queuing Theory Validation: The results did not align with queuing theory, which predicts that higher resource utilization (more threads) leads to greater throughput, but also increases the waiting time (latency) for individual operations. In my code, it actually improves both of the latceny and throughput.
+
+Latency vs. Throughput: As the queue depth increases, throughput improves dramatically, since more memory operations are processed in parallel. But with my code, 
+the latency per access also decreases instead of increase (orginially because when it increases, its due to queuing effects and memory contention).
+
+Read vs. Write Performance: Similar trends were observed for both read and write operations, though writes generally exhibited slightly higher latency and lower throughput than reads at the same queue depth.
+
+## Task 4:
