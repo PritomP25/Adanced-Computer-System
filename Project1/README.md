@@ -119,3 +119,60 @@ the latency per access also decreases instead of increase (orginially because wh
 Read vs. Write Performance: Similar trends were observed for both read and write operations, though writes generally exhibited slightly higher latency and lower throughput than reads at the same queue depth.
 
 ## Task 4:
+The purpose of this experiment is to evaluate the impact of cache miss ratio on the performance of a simple software task, such as matrix multiplication. I aim to demonstrate how increasing cache misses, due to larger data sizes that exceed cache capacity, affects execution time.
+
+### Uses: 
+Open a command terminal in a directory containing the project files, and use the commands below to compile and run the code.  
+```
+matrix_cache_ratio.c
+```
+
+Compile line:
+```
+gcc -o matrix_cache_ratio matrix_cache_ratio.c - -O2
+```
+
+Execute line:
+```
+./matrix_cache_ratio
+```
+
+### How the Script Works:
+I try to aim for a matrix of small vs big (512x512 vs 2048x2048) that will measured the exceution time. Note, because perf didn't work on my laptop when using Ubantu, I couldn't be able to check the Cache Miss Ratio %.
+
+Here are the results after I've run the code  
+![alt text](https://cdn.discordapp.com/attachments/1019778992779309097/1288702171994656839/image.png?ex=66f624ec&is=66f4d36c&hm=c1f0c19ebd73a4a092bb40b11a33dc52ff590e8374819fb69eec3ff45a75a9bc&)
+
+### Analysis:
+The larger matrix it is, then the more significant increases in the execution time. This is my inferences that while there's a higher execution time, I predict that there's also a increase in cache miss ratio. So this could represents of how the cache performance directly affects the speed of the computation tasks. 
+
+
+## Task 5:
+The objective of this experiment is to analyze the impact of TLB (Translation Lookaside Buffer) miss ratio on software performance while executing light computations (such as matrix multiplication).
+
+### Uses: 
+Open a command terminal in a directory containing the project files, and use the commands below to compile and run the code.  
+```
+matrix_tlb_test.c
+```
+
+Compile line:
+```
+gcc -o matrix_tlb_test matrix_tlb_test.c - -O2
+```
+
+Execute line:
+```
+./matrix_tlb_test
+```
+
+### How the Script Works:
+Similar as task 4, we created a small and large matrix of the same size. But the code will now run for the TLB misses. Note, because perf didn't work on my laptop when using Ubantu, I couldn't be able to check the Cache Miss Ratio %.
+
+Here are the results after I've run the code  
+![alt text](https://cdn.discordapp.com/attachments/1019778992779309097/1288704910988283956/image.png?ex=66f62779&is=66f4d5f9&hm=b354f6a41b494c4115f289089e71bda56d56f4e8e72a3fbb64baad777e39800b&)
+
+Seeing from the results, as I expected that the smaller matrix will run faster than the large matrix.
+
+### Analysis:
+The larger matrix it is, then the more significant increases in the execution time. This is my inferences that while there's a higher execution time, I predict that there's also a increase in TLB miss ratio. As my infrences, due to there a large TLB  missses adn the corresponding increases in execution time for larger datasets. Therefore, the higher TLB miss ratios indicicate, the more time spend in the page lookups, which will slows down the computation speed. 
