@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 #define SMALL_SIZE 512   // Small matrix size fits in TLB (less likely to miss)
-#define LARGE_SIZE 8192  // Large matrix size more likely to cause TLB misses
+#define LARGE_SIZE 2048  // Large matrix size more likely to cause TLB misses
 
 // Function to initialize matrices with random values
 void initialize_matrix(double *matrix, int size) {
