@@ -108,7 +108,7 @@ The metrics measured are the latency (avg time taken per memory access) and the 
 For how the operations is being preformed, both read and write operations were tested over multiple runs.
 
 Here are the results after I've run the code  
-![alt text](https://cdn.discordapp.com/attachments/1019778992779309097/1288696501068894239/image.png?ex=66f61fa4&is=66f4ce24&hm=6638d8a0ab904571128bc528acf93ce8346855a32684049e3cefd29726770533&) 
+![Image Ouput](https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/memory_queue_tradeoff.png?raw=true) 
 
 ### Analysis:
 Queuing Theory Validation: The results did not align with queuing theory, which predicts that higher resource utilization (more threads) leads to greater throughput, but also increases the waiting time (latency) for individual operations. In my code, it actually improves both of the latceny and throughput.
