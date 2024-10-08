@@ -73,7 +73,7 @@ For the Read/Write Ratios: there will be 4 different ratios in the terminal outp
 Bandwidtch Calculation:  
 The ```measure_bandwidth()``` function  was calculated as the total number of bytes transferred divided by the time taken, measured in megabytes per second (MB/s).  
 Here are the results after I've run the code  
-![alt text](https://cdn.discordapp.com/attachments/1019778992779309097/1288691980154441729/image.png?ex=66f61b6e&is=66f4c9ee&hm=850afffece7495f6099125971ea5ef9b1e7bcb9795f3544112e9849bf2647225&)
+![Ouput image](https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/bandwidth_image.png?raw=true)
 
 ### Analysis
 Effect of Data Granularity: Larger data granularity significantly increased bandwidth. As shown from the image above, there's a long MB/s being reached whne comparing the bandwidth for reads at 64B accesses and 1034B access. This shows that transferring larger blocks at once is more efficient.  
