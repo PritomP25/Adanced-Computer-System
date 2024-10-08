@@ -141,7 +141,7 @@ Execute line:
 I try to aim for a matrix of small vs big (512x512 vs 2048x2048) that will measured the exceution time. Note, because perf didn't work on my laptop when using Ubantu, I couldn't be able to check the Cache Miss Ratio %.
 
 Here are the results after I've run the code  
-![alt text](https://cdn.discordapp.com/attachments/1019778992779309097/1288702171994656839/image.png?ex=66f624ec&is=66f4d36c&hm=c1f0c19ebd73a4a092bb40b11a33dc52ff590e8374819fb69eec3ff45a75a9bc&)
+![Image Ouput](https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/matrix_cache_ratio_image.png?raw=true)
 
 ### Analysis:
 The larger matrix it is, then the more significant increases in the execution time. This is my inferences that while there's a higher execution time, I predict that there's also a increase in cache miss ratio. So this could represents of how the cache performance directly affects the speed of the computation tasks. 
