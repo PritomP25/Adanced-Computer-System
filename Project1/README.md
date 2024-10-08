@@ -36,7 +36,7 @@ The measure_latency() function: Measures the time for reading or writing to the 
 Once the program finishes, it will print out the avgerage read/write latency for cache and both memory   
 
 Here are the results after I've run the code  
-![Ouput of Memory)Latency](https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/memory_lactenmcy_image.png?raw=true)
+![Image Ouput](https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/memory_lactenmcy_image.png?raw=true)
 
 ### Analysis:
 The results highlight a significant difference in access latency between cache and main memory. We can see that the read has a faster time than the write operations no matter if its within the cache or main memory.  
@@ -170,7 +170,7 @@ Execute line:
 Similar as task 4, we created a small and large matrix of the same size. But the code will now run for the TLB misses. Note, because perf didn't work on my laptop when using Ubantu, I couldn't be able to check the Cache Miss Ratio %.
 
 Here are the results after I've run the code  
-![alt text](https://cdn.discordapp.com/attachments/1019778992779309097/1288704910988283956/image.png?ex=66f62779&is=66f4d5f9&hm=b354f6a41b494c4115f289089e71bda56d56f4e8e72a3fbb64baad777e39800b&)
+![Image Ouput](https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/matrix_tlb_test_image.png?raw=true)
 
 Seeing from the results, as I expected that the smaller matrix will run faster than the large matrix.
 
