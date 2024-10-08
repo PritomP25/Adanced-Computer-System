@@ -36,7 +36,7 @@ The measure_latency() function: Measures the time for reading or writing to the 
 Once the program finishes, it will print out the avgerage read/write latency for cache and both memory   
 
 Here are the results after I've run the code  
-![Ouput of Memory)Latency](https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/memory_lactenmcy_image.png)
+![Ouput of Memory)Latency]([https://github.com/PritomP25/Adanced-Computer-System/blob/main/Project1/memory_lactenmcy_image.png](https://github.com/PritomP25/Adanced-Computer-System/blob/7b8729ceeda33960154888e219d6d1a8d6c8cb62/Project1/memory_lactenmcy_image.png))
 
 ### Analysis:
 The results highlight a significant difference in access latency between cache and main memory. We can see that the read has a faster time than the write operations no matter if its within the cache or main memory.  
