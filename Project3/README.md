@@ -53,7 +53,7 @@ Bandwidth throughout this experiment will be measured in (Mb/s) espically for la
 
 
 ### Effect of read/write intensity ratio on bandwidth:
-![Experiment 5]()
+![Experiment 5](https://github.com/PritomP25/Adanced-Computer-System/blob/2c507f3bcb66c626550d48c7dd67b2767d1472b8/Project3/Images/R_W%20Ratio%20vs%20Bandwidth%20at%20I_O%20queue%20depth%20of%2064.png)
 
 
 
