@@ -58,7 +58,7 @@ Bandwidth throughout this experiment will be measured in (Mb/s) espically for la
 
 
 ### Effect of I/O queue depth on bandwidth:
-![Experiment 6]()
+![Experiment 6](https://github.com/PritomP25/Adanced-Computer-System/blob/c2e709e693d55d40e4b7d42ce1df3b8bd7da5893/Project3/Images/I_O%20Queue%20Depth%20vs.%20Bandwidth%20at%2050%25_50%25%20R_W%20Ratio.png)
 
 
 
