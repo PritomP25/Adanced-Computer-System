@@ -1,0 +1,30 @@
+16k-write: (g=0): rw=write, bs=(R) 16.0KiB-16.0KiB, (W) 16.0KiB-16.0KiB, (T) 16.0KiB-16.0KiB, ioengine=windowsaio, iodepth=64
+fio-3.38
+Starting 1 thread
+
+16k-write: (groupid=0, jobs=1): err= 0: pid=29972: Tue Oct 22 10:41:22 2024
+  write: IOPS=53.5k, BW=836MiB/s (877MB/s)(1024MiB/1225msec); 0 zone resets
+    slat (usec): min=6, max=15560, avg=16.75, stdev=61.37
+    clat (nsec): min=428, max=30419k, avg=619079.99, stdev=1178726.97
+     lat (usec): min=21, max=30428, avg=635.83, stdev=1181.63
+    clat percentiles (usec):
+     |  1.00th=[   28],  5.00th=[   69], 10.00th=[  124], 20.00th=[  229],
+     | 30.00th=[  334], 40.00th=[  441], 50.00th=[  545], 60.00th=[  652],
+     | 70.00th=[  758], 80.00th=[  865], 90.00th=[  979], 95.00th=[ 1074],
+     | 99.00th=[ 1663], 99.50th=[ 2737], 99.90th=[27395], 99.95th=[28967],
+     | 99.99th=[30278]
+   bw (  KiB/s): min=785824, max=917652, per=99.50%, avg=851738.00, stdev=93216.47, samples=2
+   iops        : min=49114, max=57353, avg=53233.50, stdev=5825.85, samples=2
+  lat (nsec)   : 500=0.01%, 750=0.01%, 1000=0.01%
+  lat (usec)   : 2=0.01%, 10=0.13%, 20=0.61%, 50=2.46%, 100=4.67%
+  lat (usec)   : 250=14.09%, 500=23.50%, 750=23.48%, 1000=22.67%
+  lat (msec)   : 2=7.66%, 4=0.38%, 10=0.12%, 20=0.08%, 50=0.16%
+  cpu          : usr=0.00%, sys=0.00%, ctx=0, majf=0, minf=0
+  IO depths    : 1=0.1%, 2=2.5%, 4=6.3%, 8=12.7%, 16=25.5%, 32=51.3%, >=64=1.6%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=98.4%, 8=0.1%, 16=0.1%, 32=0.1%, 64=1.6%, >=64=0.0%
+     issued rwts: total=0,65536,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=836MiB/s (877MB/s), 836MiB/s-836MiB/s (877MB/s-877MB/s), io=1024MiB (1074MB), run=1225-1225msec

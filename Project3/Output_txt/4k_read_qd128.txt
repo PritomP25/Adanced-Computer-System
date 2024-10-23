@@ -1,0 +1,29 @@
+fio: this platform does not support process shared mutexes, forcing use of threads. Use the 'thread' option to get rid of this warning.
+4k-read: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=windowsaio, iodepth=128
+fio-3.38
+Starting 1 thread
+
+4k-read: (groupid=0, jobs=1): err= 0: pid=23380: Mon Oct 21 23:17:39 2024
+  read: IOPS=165k, BW=646MiB/s (678MB/s)(1024MiB/1584msec)
+    slat (usec): min=3, max=2106, avg= 5.62, stdev= 7.86
+    clat (usec): min=52, max=3463, avg=484.09, stdev=204.57
+     lat (usec): min=70, max=3508, avg=489.71, stdev=204.82
+    clat percentiles (usec):
+     |  1.00th=[  139],  5.00th=[  200], 10.00th=[  243], 20.00th=[  306],
+     | 30.00th=[  363], 40.00th=[  416], 50.00th=[  474], 60.00th=[  529],
+     | 70.00th=[  586], 80.00th=[  644], 90.00th=[  725], 95.00th=[  799],
+     | 99.00th=[  979], 99.50th=[ 1037], 99.90th=[ 2212], 99.95th=[ 2769],
+     | 99.99th=[ 3163]
+   bw (  KiB/s): min=569176, max=725656, per=99.51%, avg=658716.33, stdev=80651.04, samples=3
+   iops        : min=142294, max=181414, avg=164679.00, stdev=20162.72, samples=3
+  lat (usec)   : 100=0.14%, 250=10.98%, 500=43.88%, 750=37.21%, 1000=7.03%
+  lat (msec)   : 2=0.63%, 4=0.11%
+  cpu          : usr=0.00%, sys=0.00%, ctx=0, majf=0, minf=0
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=3.0%, 32=28.6%, >=64=68.4%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=98.9%, 8=0.1%, 16=0.1%, 32=0.1%, 64=0.1%, >=64=1.0%
+     issued rwts: total=262144,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=128
+
+Run status group 0 (all jobs):
+   READ: bw=646MiB/s (678MB/s), 646MiB/s-646MiB/s (678MB/s-678MB/s), io=1024MiB (1074MB), run=1584-1584msec

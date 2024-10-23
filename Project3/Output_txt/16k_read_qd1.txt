@@ -1,0 +1,31 @@
+16k-read: (g=0): rw=read, bs=(R) 16.0KiB-16.0KiB, (W) 16.0KiB-16.0KiB, (T) 16.0KiB-16.0KiB, ioengine=windowsaio, iodepth=1
+fio-3.38
+Starting 1 thread
+16k-read: Laying out IO file (1 file / 1024MiB)
+
+16k-read: (groupid=0, jobs=1): err= 0: pid=9112: Tue Oct 22 02:14:25 2024
+  read: IOPS=30.1k, BW=471MiB/s (494MB/s)(1024MiB/2175msec)
+    slat (usec): min=4, max=790, avg= 6.91, stdev= 5.43
+    clat (nsec): min=253, max=2508.7k, avg=24495.35, stdev=16766.05
+     lat (usec): min=25, max=2514, avg=31.40, stdev=18.20
+    clat percentiles (usec):
+     |  1.00th=[   21],  5.00th=[   21], 10.00th=[   22], 20.00th=[   22],
+     | 30.00th=[   22], 40.00th=[   23], 50.00th=[   23], 60.00th=[   23],
+     | 70.00th=[   23], 80.00th=[   23], 90.00th=[   29], 95.00th=[   35],
+     | 99.00th=[   82], 99.50th=[  100], 99.90th=[  151], 99.95th=[  167],
+     | 99.99th=[  330]
+   bw (  KiB/s): min=416288, max=518368, per=100.00%, avg=482136.00, stdev=45972.11, samples=4
+   iops        : min=26018, max=32398, avg=30133.50, stdev=2873.26, samples=4
+  lat (nsec)   : 500=0.01%, 750=0.01%, 1000=0.01%
+  lat (usec)   : 2=0.01%, 4=0.02%, 10=0.01%, 20=0.13%, 50=97.99%
+  lat (usec)   : 100=1.35%, 250=0.49%, 500=0.01%, 750=0.01%
+  lat (msec)   : 4=0.01%
+  cpu          : usr=0.00%, sys=0.00%, ctx=0, majf=0, minf=0
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=65536,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=471MiB/s (494MB/s), 471MiB/s-471MiB/s (494MB/s-494MB/s), io=1024MiB (1074MB), run=2175-2175msec
