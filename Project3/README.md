@@ -39,7 +39,7 @@ Latency throughout this experiment will be measued in micro-seconds (us).
 
 
 ### Effect of I/O queue depth on latency:
-![Experiment 3]()
+![Experiment 3](https://github.com/PritomP25/Adanced-Computer-System/blob/926fc99f5288cc4e97e145e71ce34244dbc78e35/Project3/Images/I_O%20Queue%20Depth%20vs.%20Latency%20at%2050%25_50%25%20R_W%20Ratio.png)
 
 
 
