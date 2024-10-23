@@ -70,7 +70,9 @@ In this section, I will talk about the relationship between the queue depth and 
 
 ## Conclusion
 
+Comparing my results to the Intel Data Center NVMe SSD D7-P5600, which has a random write-only 4KB IOPS of 130K. I have a few thoughts on some key differences between higher IOPS on Client-Grade SSDs. 
+1. Targeted optimization for client workloads: Client-grade SSDs in my experiments are usually designed for lower queue depths and consumer workloads. These SSDs can sometimes achieve higher IOPS under certain conditions (particularly low queue depths) than enterprise-grade SSDs, which are designed for more sustained, high-performance environments with higher queue depths and consistent performance over time.
+2. Client-grade: SSDs frequently employ aggressive caching techniques, such as DRAM and SLC caches, to improve short-term performance. These caches store incoming data quickly before gradually writing it to the main NAND storage. This caching can result in higher IOPS in shorter tests like yours, but in longer workloads (such as those in data centers), performance suffers as the cache fills up and the SSD must write directly to NAND.
+3. Impact of Queue Depth: Client-grade SSDs may perform comparably, if not better, than data center SSDs at lower queue depths (such as 1 to 32), because they are designed to handle such workloads more efficiently. The Intel Data Center SSD, on the other hand, is designed to perform well at higher queue depths (64, 128, 256+), which are typical for enterprise workloads. If you notice higher IOPS at queue depths less than 32 or 64, this could explain why. However, as the queue depth increases beyond 64, enterprise-grade SSDs will generally outperform, as they are designed to handle a greater number of concurrent requests.
 
-
-
-
+In conclusion, while my client-grade SSD may have higher IOPS under certain conditions, such as lower queue depths or short durations, the Intel Data Center NVMe SSD D7-P5600 is intended for long-term reliability, consistency, and sustained performance in enterprise environments. The Intel SSD's design priorities, which include endurance, power loss protection, and improved performance under heavy concurrent workloads, explain why its peak IOPS may appear lower in this specific metric than your client-grade SSD.
