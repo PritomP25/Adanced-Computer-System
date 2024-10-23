@@ -23,4 +23,5 @@ Explanation:
 - --output=128k_read_qd1.txt: Redirects the output to a file for later analysis. Can change the name to anything.
 
 ## Results and Analysis
-![Data Table used from this experiment]()
+![Data Table used from this experiment](https://github.com/PritomP25/Adanced-Computer-System/blob/f896f5f1ba2b5e96a08352e0fe40acee16102df8/Project3/Images/Full_Data.PNG)
+
