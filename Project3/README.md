@@ -48,7 +48,7 @@ Latency throughout this experiment will be measued in micro-seconds (us).
 Bandwidth throughout this experiment will be measured in (Mb/s) espically for large data size, while as (xk) for IOPS of small data size.
 
 ### Effect of data access size on bandwidth:
-![Experiment 4]()
+![Experiment 4](https://github.com/PritomP25/Adanced-Computer-System/blob/aaa60461a8fe796df7ca47ab76b784f54dcb9d06/Project3/Images/Data%20Access%20Size%20vs.%20Bandwidth%20at%20READ%20Only.png)
 
 
 
