@@ -30,7 +30,7 @@ The table above shows all the data collected from the experiments.
 Latency throughout this experiment will be measued in micro-seconds (us).
 
 ### Effect of data access size on latency: 
-![Experiment 1]()
+![Experiment 1](https://github.com/PritomP25/Adanced-Computer-System/blob/86b966c1e909a9f30383d4ba60b5b1b223c9ae52/Project3/Images/Data%20Access%20Size%20vs.%20Latency%20at%20READ%20only.png)
 
 
 
