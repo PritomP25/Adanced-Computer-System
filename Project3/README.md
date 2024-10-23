@@ -35,7 +35,7 @@ Latency throughout this experiment will be measued in micro-seconds (us).
 
 
 ### Effect of read/write intensity ratio on latency:
-![Experiment 2]()
+![Experiment 2](https://github.com/PritomP25/Adanced-Computer-System/blob/8f6518b7f4e6d54726214ca7d4ffc72ed0032ff2/Project3/Images/R_W%20Ratio%20vs%20Latency%20at%20I_O%20queue%20depth%20of%2064.png)
 
 
 ### Effect of I/O queue depth on latency:
