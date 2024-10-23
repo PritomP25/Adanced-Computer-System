@@ -24,4 +24,47 @@ Explanation:
 
 ## Results and Analysis
 ![Data Table used from this experiment](https://github.com/PritomP25/Adanced-Computer-System/blob/f896f5f1ba2b5e96a08352e0fe40acee16102df8/Project3/Images/Full_Data.PNG)
+The table above shows all the data collected from the experiments.
+
+## Latency Measurements
+Latency throughout this experiment will be measued in micro-seconds (us).
+
+### Effect of data access size on latency: 
+![Experiment 1]()
+
+
+
+### Effect of read/write intensity ratio on latency:
+![Experiment 2]()
+
+
+### Effect of I/O queue depth on latency:
+![Experiment 3]()
+
+
+
+
+## Bandwidth Measurements
+Bandwidth throughout this experiment will be measured in (Mb/s) espically for large data size, while as (xk) for IOPS of small data size.
+
+### Effect of data access size on bandwidth:
+![Experiment 4]()
+
+
+
+### Effect of read/write intensity ratio on bandwidth:
+![Experiment 5]()
+
+
+
+### Effect of I/O queue depth on bandwidth:
+![Experiment 6]()
+
+
+
+## Conclusion
+
+
+
+
 
