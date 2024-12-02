@@ -55,3 +55,17 @@ Note, invalid method_enable other than 0, 1, and 2 will result into usuing No_Op
 ## Data Result:
 I used a personal video from a Wedding event of my friends/family dancing that I've attended during the Fall sesmter. For the privacy reasons, I will not used include that video into this project as it a personal video for the event so I do not want to share them online.  
 
+**Video Compression Excutation Line**:  
+| Number of Threads | No Optimization Time (s) | Multi-Threading Time (s) | 
+|-------------------|--------------------------|--------------------------|
+| 1 | # | # | # |
+| 2 | # | # | # |
+| 4 | # | # | # |
+| 8 | # | # | # |
+
+## Analysis 
+
+
+
+## Conclusion
+
