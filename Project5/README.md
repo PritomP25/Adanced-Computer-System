@@ -63,7 +63,8 @@ I used a personal video (1:35 min) from a Wedding event of my friends/family dan
 | 4 | 43.9711 | 41.1241 | 6.24823 |
 | 8 | 43.0576 | 40.9155 | 6.0423 | 
 
-![Video Compression Table]()
+![Video Compression Table](https://github.com/PritomP25/Adanced-Computer-System/blob/338bfceb1f044b50662c9986f55fcc4e62f94d8b/Project5/Processing_table.PNG)
+
 
 ## Analysis 
 
