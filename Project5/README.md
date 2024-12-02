@@ -55,13 +55,15 @@ Note, invalid method_enable other than 0, 1, and 2 will result into usuing No_Op
 ## Data Result:
 I used a personal video (1:35 min) from a Wedding event of my friends/family dancing that I've attended during the Fall sesmter. For the privacy reasons, I will not used include that video into this project as it a personal video for the event so I do not want to share them online.  
 
-**Video Compression Excutation Line**:  
+**Video Compression Excutation Time Table**:  
 | Number of Threads | No Optimization Time (s) | Multi-Threading Time (s) | SIMD Instruction Time (s) |
 |-------------------|--------------------------|--------------------------|---------------------------|
 | 1 | 45.1035 | 41.1151 | 6.18483 |
 | 2 | 42.8145 | 40.5398 | 5.98023 |
 | 4 | 43.9711 | 41.1241 | 6.24823 |
 | 8 | 43.0576 | 40.9155 | 6.0423 | 
+
+![Video Compression Table]()
 
 ## Analysis 
 
