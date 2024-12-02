@@ -67,8 +67,9 @@ I used a personal video (1:35 min) from a Wedding event of my friends/family dan
 
 
 ## Analysis 
-
-
+From the data, we can see that SIMD instruction has a fastest processing time to compress the video. It was within standard that from the fastest processing time, it would be SIMD instructions > Multi-threading > No optimization which aline with the results based on previous project experiments as well as in-class. The longest processing time by far was the No optimization when using hte OpenCV's resize method to compressed the video algothim. There is a problem with my code that while multi-threading does result in a little faster processing time, its not the ideal scencior for it. In which, over time I will try to optimize my multi-threading code because in the ideal scenior,, increasing the number of threads will reduced the processing time, though it probably wouldn't be the fastest compared to enabling SIMD instructions. 
 
 ## Conclusion
+The advantages of using SIMD instructions and Multi-threading via parallelism for compressing video are clear. Based on our experiment, in the ideal world, the results indicate that using these techniques can reduced the processing time required for longer videos or videos with a higher frame rate. Since may streaming services like youtube, Netflix, etc requires to compression the video when uploading it, its important that longer videos are process in shorter time and contain their resolution quality for viewers to watched. Overtime, while my code doesn't fully represenat the true ideal world for multi-threading, we still have shown that any optimization will result in faster processing time compared to no optimization.
 
+In summary, SIMD instructions are faster because they process multiple data elements simultaneously within a single CPU instruction, leveraging data-level parallelism. This is highly efficient for operations like resizing or filtering, where the same operation is applied repeatedly across pixels. In contrast, multi-threading divides the workload among threads but incurs overhead from thread management and synchronization. No optimizations process frames sequentially, which lacks both parallelism and data-level efficiency. Thus, SIMD reduces computation time significantly by directly utilizing the CPU's vectorized instruction set.
